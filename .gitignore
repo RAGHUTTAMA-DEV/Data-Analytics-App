@@ -1,0 +1,12 @@
+# Ignore environment files
+.env
+
+# Ignore node_modules
+node_modules/
+
+# Ignore logs
+*.log
+logs/
+
+# Ignore git directory in Backend
+rmdir /s /q Backend\.git
