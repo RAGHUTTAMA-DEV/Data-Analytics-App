@@ -9,4 +9,4 @@ node_modules/
 logs/
 
 # Ignore git directory in Backend
-rmdir /s /q Backend\.git
+Backend/.git
