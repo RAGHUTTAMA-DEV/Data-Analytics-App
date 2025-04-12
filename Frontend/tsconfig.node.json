@@ -3,22 +3,27 @@
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
     "target": "ES2022",
     "lib": ["ES2023"],
-    "module": "ESNext",
-    "skipLibCheck": true,
+    "module": "ESNext", // Use ES modules
+    "skipLibCheck": true, // Skip type checking of declaration files
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
+    "moduleResolution": "Node", // Use Node.js module resolution
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": true,
 
     /* Linting */
-    "strict": true,
+    "strict": true, // Enable strict type-checking
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    /* Project references */
+    "composite": true, // Required for project references
+    "resolveJsonModule": true, // Allow importing JSON files
+    "esModuleInterop": true // Enable interoperability between CommonJS and ES modules
   },
-  "include": ["vite.config.ts"]
+  "include": ["src"] // Include all files in the `src` directory
 }
