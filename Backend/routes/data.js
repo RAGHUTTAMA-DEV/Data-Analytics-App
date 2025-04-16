@@ -1,7 +1,7 @@
 const jwt = require("jsonwebtoken");
 const router = require("express").Router();
 const { UserModel } = require("../models/Schema");
-const { UploadDataModel } = require("../models/Schema");
+const { UploadDataModel } = require("../models/Schema");  
 const aq = require("arquero");
 
 router.post('/upload', async (req, res) => {
