@@ -18,7 +18,7 @@ async function  main() {
     await mongoose.connect(process.env.MONGO_URL);
     console.log("connected to mongodb");
     app.listen(process.env.PORT,()=>{
-        console.log("server is running on ${process.env.MONGO_URL}" );
+        console.log("server is running on"+process.env.MONGO_URL );
     });
 } 
 
