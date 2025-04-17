@@ -55,11 +55,12 @@ export const dataService={
     const response=await api.post('/data/upload',{datasetName,rawdata});
     return response.data;
     },
-    getDataset:async (datasetName:string)=>{
-        const response=await api.get(`/data/${datasetName}`);
+    getDatasets:async ()=>{
+        const response=await api.get(`/data/bluk`);
         return response.data;
     },
-    getDatasets:async ()=>{
+    
+    getAnalytics:async ()=>{
         const response=await api.get('/data');
         return response.data;
     },
