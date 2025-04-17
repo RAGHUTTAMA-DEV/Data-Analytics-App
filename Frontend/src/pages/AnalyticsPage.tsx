@@ -1,3 +1,14 @@
 import React from 'react'
 import Navbar from '@/components/Layout/Navbar'
-import AnalyticForm from '@/components/Analytics/AnalyticForm'
+import AnalyticsView from '@/components/Analytics/AnalyticsForm'
+
+const AnalyticsForm:React.FC=()=>{
+    return(
+        <div>
+            <Navbar/>
+            <AnalyticsView/>
+        </div>
+    )
+}
+
+export default AnalyticsForm;
