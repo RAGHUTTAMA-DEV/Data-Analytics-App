@@ -5,7 +5,7 @@ const NotFound=()=>{
     const location =useLocation();
 
     useEffect(()=>{
-       console.error(`4041: No match for ${location.pathname}`); 
+       console.error(`4041: No matches for ${location.pathname}`); 
     },[location.pathname]);
 
     return (
